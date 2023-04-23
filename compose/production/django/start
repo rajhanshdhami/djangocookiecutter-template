@@ -4,9 +4,17 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+export PYTHONPATH=/Projectdirname
 
 python /app/manage.py collectstatic --noinput
+#python path in docker environment i.e
+#/usr/bin/python manage.py collectstatic --noinput
 
+#other manage.py commands have to run it like 
+# python manage.py initgroups
+
+# python manage.py createsuperuserdefault 
+# provide arg parse argument with above command
 compress_enabled() {
 python << END
 import sys
