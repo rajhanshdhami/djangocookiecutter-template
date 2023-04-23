@@ -54,3 +54,5 @@ debug [n]:
  [SUCCESS]: Project initialized, keep up the good work!
  
  Use Gunicorn for better performance in terms of reliability than django single threaded development server within server production environment.
+ 
+ Reference link:https://realpython.com/development-and-deployment-of-cookiecutter-django-via-docker/
